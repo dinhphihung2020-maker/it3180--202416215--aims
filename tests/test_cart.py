@@ -14,6 +14,14 @@ class TestCart(unittest.TestCase):
 
         self.assertEqual(len(cart.items), 20)
 
+    def test_add_one_dvd(self):
+        cart = Cart()
+        dvd = DigitalVideoDisc("Test DVD", cost=10)
+
+        cart.add_dvd(dvd)
+
+        self.assertEqual(len(cart.items), 1)
+        self.assertEqual(cart.items[0], dvd)
 
 if __name__ == "__main__":
     unittest.main()
