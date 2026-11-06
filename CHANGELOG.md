@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-11-06
+
+### Fixed
+- Correct cart full message when adding a DVD to a full cart.
+
 ### Added
 - Add sort_by_title() and sort_by_cost() to Cart.
 
